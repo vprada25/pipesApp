@@ -6,23 +6,23 @@
 </div>
 <div class="p-grid">
     <div class="p-col-4">
-       <p-card header="uppercase"
-            [subheader]="nameLower | uppercase"        >
+        <p-card header="uppercase" 
+        [subheader]="nameLower | uppercase">
             {{nameLower|uppercase}}
-       </p-card> 
-       
+        </p-card>
+
     </div>
     <div class="p-col-4">
-        <p-card header="lowercase"
-        [subheader]="nameUpper | lowercase"        >
-        {{nameUpper|lowercase}}
-   </p-card> 
+        <p-card header="lowercase" 
+        [subheader]="nameUpper | lowercase">
+            {{nameUpper|lowercase}}
+        </p-card>
     </div>
     <div class="p-col-4">
-        <p-card header="titlecase"
-        [subheader]="nameComplete | titlecase"        >
-        {{nameComplete|titlecase}}
-   </p-card> 
+        <p-card header="titlecase" 
+        [subheader]="nameComplete | titlecase">
+            {{nameComplete|titlecase}}
+        </p-card>
     </div>
 </div>
 <div class="text-layout">
@@ -33,7 +33,7 @@
 </div>
 <div class="p-grid">
     <div class="p-col-6">
-       <p-card         >
+        <p-card>
             <ul>
                 <li>
                     fecha
@@ -41,12 +41,24 @@
                 <li>
                     fecha | date
                 </li>
+                <li>
+                    fecha | date: 'short'
+                </li>
+                <li>
+                    fecha | date: 'long'
+                </li>
+                <li>
+                    fecha | date: 'MMMM'
+                </li>
+                <li>
+                    fecha | date: 'MMMM dd, yyyy'
+                </li>
             </ul>
-       </p-card> 
-       
+        </p-card>
+
     </div>
     <div class="p-col-6">
-        <p-card  >
+        <p-card>
             <ul>
                 <li>
                     {{fecha}}
@@ -54,7 +66,19 @@
                 <li>
                     {{fecha | date}}
                 </li>
+                <li>
+                    {{fecha | date: 'short'}}
+                </li>
+                <li>
+                    {{fecha | date: 'long'}}
+                </li>
+                <li>
+                    {{fecha | date: 'MMMM'}}
+                </li>
+                <li>
+                    {{fecha | date: 'MMMM dd, yyyy'}}
+                </li>
             </ul>
-        </p-card> 
-    </div>  
+        </p-card>
+    </div>
 </div>
