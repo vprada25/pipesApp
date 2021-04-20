@@ -53,6 +53,13 @@
                 <li>
                     fecha | date: 'MMMM dd, yyyy'
                 </li>
+                <hr>
+                <li>
+                    fecha | date: 'long':'GMT-6'
+                </li>
+                <li>
+                    fecha | date: 'long':'GMT-4'
+                </li>
             </ul>
         </p-card>
 
@@ -77,6 +84,16 @@
                 </li>
                 <li>
                     {{fecha | date: 'MMMM dd, yyyy'}}
+                </li>
+                <hr>
+                <li>
+                    {{fecha | date: 'long':'GMT-6'}}
+                </li>
+                <li>
+                    {{fecha | date: 'long':'GMT-4'}}
+                </li>
+                <li>
+                    {{fecha | date: 'long':'': 'en'}}
                 </li>
             </ul>
         </p-card>
