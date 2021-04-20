@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './routes/app-router.module';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
+import { PipesSalesModule } from './pipes-sales/pipesSales.module';
 
 
 
@@ -17,6 +18,7 @@ import { PrimeNgModule } from './prime-ng/prime-ng.module';
     BrowserModule,
     AppRouterModule,
     SharedModule,
+    PipesSalesModule,
     PrimeNgModule
   ],
   providers: [],

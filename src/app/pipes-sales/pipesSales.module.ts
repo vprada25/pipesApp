@@ -6,7 +6,9 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { NumberComponent } from './pages/number/number.component';
 import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 import { OrderComponent } from './pages/order/order.component';
-import { CommonsComponent } from './pages/commons/commons.component';
+import { BasicComponent } from './pages/commons/basic.components';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
 
 
 
@@ -15,13 +17,13 @@ import { CommonsComponent } from './pages/commons/commons.component';
     NumberComponent,
     NotCommonsComponent,
     OrderComponent,
-    CommonsComponent
+    BasicComponent
   ],
   exports: [
     NumberComponent,
     NotCommonsComponent,
     OrderComponent,
-    CommonsComponent
+    BasicComponent
     
   ],
   imports: [

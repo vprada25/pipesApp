@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-commons',
-  templateUrl: './commons.component.html',
+  selector: 'app-basic',
+  templateUrl: './basic.component.html',
   styles: [
   ]
 })
-export class CommonsComponent implements OnInit {
+export class BasicComponent implements OnInit {
 
   constructor() { }
 
