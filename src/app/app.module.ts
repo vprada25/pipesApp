@@ -1,13 +1,14 @@
+import { registerLocaleData } from '@angular/common'
+import localeEs from '@angular/common/locales/es-CO';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './routes/app-router.module';
 import { PipesSalesModule } from './pipes-sales/pipesSales.module';
 
-
-
+registerLocaleData(localeEs);
 
 @NgModule({
   declarations: [
@@ -18,9 +19,13 @@ import { PipesSalesModule } from './pipes-sales/pipesSales.module';
     AppRouterModule,
     SharedModule,
     PipesSalesModule,
-   
+
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LOCALE_ID, useValue: 'es-CO'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
