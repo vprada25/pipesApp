@@ -6,19 +6,55 @@
 </div>
 <div class="p-grid">
     <div class="p-col-4">
-       <p-card header="uppercase">
-
+       <p-card header="uppercase"
+            [subheader]="nameLower | uppercase"        >
+            {{nameLower|uppercase}}
        </p-card> 
        
     </div>
     <div class="p-col-4">
-        <p-card>
-           
-       </p-card>
+        <p-card header="lowercase"
+        [subheader]="nameUpper | lowercase"        >
+        {{nameUpper|lowercase}}
+   </p-card> 
     </div>
     <div class="p-col-4">
-        <p-card>
-           
-        </p-card>
+        <p-card header="titlecase"
+        [subheader]="nameComplete | titlecase"        >
+        {{nameComplete|titlecase}}
+   </p-card> 
     </div>
+</div>
+<div class="text-layout">
+    <h1>Date | fecha | Pipe</h1>
+    <p>
+        Pipe para manejar las fechas
+    </p>
+</div>
+<div class="p-grid">
+    <div class="p-col-6">
+       <p-card         >
+            <ul>
+                <li>
+                    fecha
+                </li>
+                <li>
+                    fecha | date
+                </li>
+            </ul>
+       </p-card> 
+       
+    </div>
+    <div class="p-col-6">
+        <p-card  >
+            <ul>
+                <li>
+                    {{fecha}}
+                </li>
+                <li>
+                    {{fecha | date}}
+                </li>
+            </ul>
+        </p-card> 
+    </div>  
 </div>
