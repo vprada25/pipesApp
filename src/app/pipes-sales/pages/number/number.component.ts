@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumberComponent {
 
-  netSales: number = 2057444444458.791211;
-  percentage: number = 0.48;
+  netSales: number = 2057458.791211;
+  percentage: number = 0.48545;
 
 }
