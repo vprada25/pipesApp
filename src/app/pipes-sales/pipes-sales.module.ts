@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+
 import { NumberComponent } from './pages/number/number.component';
 import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
-import { CommonsComponent } from './pages/commons/commons.component';
 import { OrderComponent } from './pages/order/order.component';
+import { CommonsComponent } from './pages/commons/commons.component';
 
 
 
@@ -11,18 +14,20 @@ import { OrderComponent } from './pages/order/order.component';
   declarations: [
     NumberComponent,
     NotCommonsComponent,
-    CommonsComponent,
-    OrderComponent
-  ],
-  imports: [
-    CommonModule
+    OrderComponent,
+    CommonsComponent
   ],
   exports: [
     NumberComponent,
     NotCommonsComponent,
-    CommonsComponent,
-    OrderComponent
-
+    OrderComponent,
+    CommonsComponent
+    
+  ],
+  imports: [
+    CommonModule,
+    PrimeNgModule
+    
   ]
 })
 export class PipesSalesModule { }

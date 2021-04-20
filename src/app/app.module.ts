@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './routes/app-router.module';
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
 
 
 
@@ -15,7 +16,8 @@ import { AppRouterModule } from './routes/app-router.module';
   imports: [
     BrowserModule,
     AppRouterModule,
-    SharedModule
+    SharedModule,
+    PrimeNgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
